@@ -64,6 +64,7 @@ export class TaskDetailsComponent implements OnInit {
         response => {
           console.log(response);
           this.message = response.message;
+          this.router.navigate(['/tasks']);
         },
         error => {
           console.log(error);
@@ -75,7 +76,7 @@ export class TaskDetailsComponent implements OnInit {
       .subscribe(
         response => {
           console.log(response);
-          this.router.navigate(['/tutorials']);
+          this.router.navigate(['/tasks']);
         },
         error => {
           console.log(error);
